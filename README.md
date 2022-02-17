@@ -1,1 +1,0 @@
-# compsciclub.github.io
