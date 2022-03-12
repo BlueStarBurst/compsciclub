@@ -52,11 +52,11 @@ render((
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App location='home' />} />
-                <Route path="/multimedia" element={<App location='home' />} />
+                <Route path="/compsciclub" element={<App location='home' />} />
                 <Route path="/sources" element={<App location='sources' />} />
-                <Route path="/multimedia/sources" element={<App location='sources' />} />
+                <Route path="/compsciclub/sources" element={<App location='sources' />} />
                 <Route path="/changes" element={<App location='changes' />} />
-                <Route path="/multimedia/changes" element={<App location='changes' />} />
+                <Route path="/compsciclub/changes" element={<App location='changes' />} />
                 <Route path="*" element={<App location='error' />} />
                 {/* <Route path="/details" component={Details} /> */}
             </Routes>
