@@ -40,7 +40,7 @@ function App(props) {
                 setCurrentPage(<PastMeetings />);
                 break;
             default:
-                setCurrentPage(<Navigate to="/" />)
+                setCurrentPage(<Navigate to="/compsciclub" />)
         }
     }, [props]);
 
