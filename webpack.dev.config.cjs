@@ -39,6 +39,8 @@ function createCopy(pathW = '') {
 
 module.exports = [
     createCopy(),
+    createCopy('/projects'),
+    createCopy('/pastmeetings'),
 ];
 
 // const rendererConfig = lodash.cloneDeep(commonConfig);

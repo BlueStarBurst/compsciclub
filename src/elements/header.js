@@ -16,7 +16,7 @@ export default function Header(props) {
             behavior: 'smooth'
         })
         setTimeout(() => {
-            window.location = "/";
+            window.location = "/compsciclub/";
         }, 500)
     }
 
@@ -26,7 +26,7 @@ export default function Header(props) {
             behavior: 'smooth'
         })
         setTimeout(() => {
-            window.location = "/" + name;
+            window.location = "/compsciclub/" + name;
         }, 1000)
     }
 
