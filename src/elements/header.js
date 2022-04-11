@@ -4,13 +4,13 @@ import { useHref } from "react-router-dom";
 export default function Header(props) {
 
     function handleClick(e) {
-        if (props.location == "/") {
-            document.documentElement.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            })
-            return;
-        }
+        // if (props.location == "/") {
+        //     document.documentElement.scrollTo({
+        //         top: 0,
+        //         behavior: 'smooth'
+        //     })
+        //     return;
+        // }
         document.documentElement.scrollTo({
             top: 1,
             behavior: 'smooth'
@@ -67,16 +67,16 @@ export default function Header(props) {
 
     if (props.static) {
         return (<div ref={head} className="header">
-        <div className="div1 fade" onClick={(e) => { redir(e, "changes") }}>
-            <p>changes</p>
+        <div className="div1 fade" onClick={(e) => { redir(e, "pastmeetings") }}>
+            <p>past meetings</p>
         </div>
         <div className='mainBack' onClick={handleClick}>
             <h1>{">"}{text}</h1>
             <h1 className='flashing'>_</h1>
         </div>
 
-        <div className="div2 fade" onClick={(e) => { redir(e, "sources") }}>
-            <p>sources</p>
+        <div className="div2 fade" onClick={(e) => { redir(e, "projects") }}>
+            <p>projects</p>
         </div>
     </div>)
     }
@@ -102,7 +102,7 @@ export default function Header(props) {
 
 
     return (<div ref={head} className="header">
-        <div className="div1 fade" onClick={(e) => { redir(e, "changes") }}>
+        <div className="div1 fade" onClick={(e) => { redir(e, "pastmeetings") }}>
             <p>past meetings</p>
         </div>
         <div className='mainBack' onClick={handleClick}>
@@ -110,7 +110,7 @@ export default function Header(props) {
             <h1 className='flashing'>_</h1>
         </div>
 
-        <div className="div2 fade" onClick={(e) => { redir(e, "sources") }}>
+        <div className="div2 fade" onClick={(e) => { redir(e, "projects") }}>
             <p>projects</p>
         </div>
     </div>)

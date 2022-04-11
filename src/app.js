@@ -18,6 +18,7 @@ import {
 } from "react-router-dom";
 // import Header from "./elements/header";
 import Home from "./elements/home";
+import PastMeetings from "./elements/pastmeetings";
 // import Error from "./elements/error";
 // import Sources from "./elements/sources";
 // import Changes from "./elements/changes";
@@ -34,6 +35,9 @@ function App(props) {
         switch (props.location) {
             case 'home':
                 setCurrentPage(<Home />);
+                break;
+            case 'pastmeetings':
+                setCurrentPage(<PastMeetings />);
                 break;
             default:
                 setCurrentPage(<Navigate to="/" />)
@@ -53,10 +57,10 @@ render((
             <Routes>
                 <Route path="/" element={<App location='home' />} />
                 <Route path="/compsciclub" element={<App location='home' />} />
-                <Route path="/sources" element={<App location='sources' />} />
-                <Route path="/compsciclub/sources" element={<App location='sources' />} />
-                <Route path="/changes" element={<App location='changes' />} />
-                <Route path="/compsciclub/changes" element={<App location='changes' />} />
+                <Route path="/pastmeetings" element={<App location='pastmeetings' />} />
+                <Route path="/compsciclub/pastmeetings" element={<App location='pastmeetings' />} />
+                <Route path="/projects" element={<App location='projects' />} />
+                <Route path="/compsciclub/projects" element={<App location='projects' />} />
                 <Route path="*" element={<App location='error' />} />
                 {/* <Route path="/details" component={Details} /> */}
             </Routes>

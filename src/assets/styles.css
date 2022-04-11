@@ -9,7 +9,9 @@
   white-space: nowrap;
 }
 
-.mainBack p {text-align: left;}
+.mainBack p {
+  text-align: left;
+}
 
 .back {
   padding: 5% 0;
@@ -48,12 +50,10 @@
   }
 }
 
-
 html {
   overflow-x: hidden;
   color: white;
 }
-
 
 .over {
   height: auto;
@@ -119,7 +119,8 @@ html {
   color: white;
   justify-content: space-between;
   align-items: center;
-  /* background-color: white; */
+  /* background-color: linear rgb(78, 108, 116, 0.8); */
+  background-image: linear-gradient(to bottom, rgba(78, 108, 116, 1), rgba(78, 108, 116, 0));
   width: max-content;
   height: 10vh;
   margin-top: 0;
@@ -266,6 +267,29 @@ html {
   background-color: rgb(78, 108, 116);
 }
 
+.page-static {
+  padding: 1rem 10rem 10rem 10rem;
+  margin-top: 30vh;
+  min-height: 70vh;
+  /* background-color: blue; */
+  width: 100%;
+  min-width: 550px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  background-color: rgb(78, 108, 116);
+}
+
+.page-static div:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.page-static div:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
 .sources {
   padding: 10rem;
   margin-top: 5vh;
@@ -386,7 +410,7 @@ html {
   h1 {
     font-size: 600%;
   }
-  
+
   h3 {
     font-size: 300%;
   }
@@ -399,7 +423,7 @@ html {
     font-size: 600%;
     animation: flash 1s infinite;
   }
-  
+
   .back {
     padding: 5% 5%;
     width: 100%;
@@ -436,7 +460,6 @@ html {
   }
 
   .sources p {
-    
     width: 100%;
   }
 
@@ -453,3 +476,67 @@ html {
   }
 }
 
+.dropdown-card {
+  width: 100%;
+  max-width: 100%;
+  min-width: 500px;
+  overflow-wrap: normal;
+  flex-wrap: wrap;
+  /* margin-top: 45vh; */
+  background-color: white;
+  /* border-radius: 10px; */
+  transition: all 0.25s;
+}
+
+.dropdown-card h3 {
+  padding: 0.5em;
+  margin: 0;
+}
+
+.frame {
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 0px 0px 10px 10px; */
+  /* border-radius: 0px !important; */
+}
+
+.frame-outer-closed {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.frame-outer-open {
+  height: 50vw;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.frame-closed {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  transition: all 1s;
+  pointer-events: all;
+  overflow: hidden;
+  position: relative;
+}
+
+.frame-open {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  transition: all 1s;
+  pointer-events: all;
+  background-image: url("./imgs/Eclipse-1s-200px.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+iframe {
+  border-radius: 0px !important;
+  height: 100%;
+  width: 100%;
+}

@@ -19,7 +19,7 @@ export default function Footer(props) {
             return
         }
         setTimeout(() => {
-            window.location = "/multimedia/" + name;
+            window.location = "/compsciclub/" + name;
         }, 1000)
         
     }
@@ -29,11 +29,11 @@ export default function Footer(props) {
             <p onClick={handleClick} style={{marginBottom: "0"}}>
                 back to top
             </p>
-            <p onClick={(e) => {redir(e, "changes")}} style={{marginBottom: "0"}}>
-                changes
+            <p onClick={(e) => {redir(e, "pastmeetings")}} style={{marginBottom: "0"}}>
+                past meetings
             </p>
-            <p onClick={(e) => {redir(e, "sources")}} style={{marginBottom: "0"}}>
-                sources
+            <p onClick={(e) => {redir(e, "projects")}} style={{marginBottom: "0"}}>
+                projects
             </p>
         </div>
     )

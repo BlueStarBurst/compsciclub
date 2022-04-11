@@ -20,7 +20,7 @@ export default function Home(props) {
             top: 0,
             behavior: 'smooth'
         })
-        window.location = "/multimedia/" + name;
+        window.location = "/compsciclub/" + name;
     }
 
     function handleClick(e, fix = false) {
