@@ -403,24 +403,24 @@ html {
 
 @media only screen and (max-device-width: 600px) {
   html {
-    font-size: 300%;
+    font-size: 100%;
     /* background-color: black; */
   }
 
   h1 {
-    font-size: 600%;
-  }
-
-  h3 {
     font-size: 300%;
   }
 
-  p {
+  h3 {
     font-size: 200%;
   }
 
+  p {
+    font-size: 150%;
+  }
+
   .flashing {
-    font-size: 600%;
+    font-size: 300%;
     animation: flash 1s infinite;
   }
 
@@ -446,12 +446,23 @@ html {
     max-width: 100%;
     overflow-wrap: normal;
     flex-wrap: wrap;
-    margin-top: 45vh;
+    margin-top: 5vh;
+    font-size: 200%;
+  }
+
+  .dropdown-card {
+    font-size: 200%;
   }
 
   .page {
     padding: 1rem 1rem 0 1rem;
     width: 100vw;
+  }
+
+  .page-static {
+    padding: 1rem 1rem 1rem 1rem;
+    width: 100vw;
+    margin-top: 10vh;
   }
 
   .sources {
@@ -468,11 +479,19 @@ html {
   }
 
   .header-main {
-    transform: translateY(40vh);
+    /* transform: translateY(40vh); */
+    justify-content: center;
+    margin-top: 45vh;
+    align-items: center;
     transition: all 1s;
   }
   .side {
     width: 100% !important;
+  }
+
+  .foot {
+    font-size: 120%;
+    gap: 3rem;
   }
 }
 
