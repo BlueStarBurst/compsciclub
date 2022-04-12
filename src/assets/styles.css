@@ -483,8 +483,15 @@ html {
     justify-content: center;
     margin-top: 45vh;
     align-items: center;
-    transition: all 1s;
+    transition: all 1s !important;
+    /* font-size: 150%; */
   }
+
+  .header {
+    font-size: 100%;
+    transition: all 1s !important;
+  }
+
   .side {
     width: 100% !important;
   }
