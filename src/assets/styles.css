@@ -245,6 +245,7 @@ html {
   overflow-x: hidden;
   background-color: rgb(78, 108, 116);
   top: 0;
+  overflow: hidden;
 }
 
 .wide {
@@ -280,6 +281,19 @@ html {
   align-items: center;
   overflow-x: hidden;
   background-color: rgb(78, 108, 116);
+  animation: fadeUp 1s;
+  overflow: hidden;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .page-static div:first-child {
@@ -484,6 +498,8 @@ html {
     margin-top: 45vh;
     align-items: center;
     transition: all 1s !important;
+    width: 100%;
+    justify-content: space-between;
     /* font-size: 150%; */
   }
 
