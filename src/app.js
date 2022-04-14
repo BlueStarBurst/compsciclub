@@ -19,6 +19,7 @@ import {
 // import Header from "./elements/header";
 import Home from "./elements/home";
 import PastMeetings from "./elements/pastmeetings";
+import Projects from './elements/projects';
 // import Error from "./elements/error";
 // import Sources from "./elements/sources";
 // import Changes from "./elements/changes";
@@ -38,6 +39,9 @@ function App(props) {
                 break;
             case 'pastmeetings':
                 setCurrentPage(<PastMeetings />);
+                break;
+            case 'projects':
+                setCurrentPage(<Projects />);
                 break;
             default:
                 setCurrentPage(<Navigate to="/compsciclub" />)

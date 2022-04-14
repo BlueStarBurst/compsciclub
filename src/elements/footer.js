@@ -21,20 +21,32 @@ export default function Footer(props) {
         setTimeout(() => {
             window.location = "/compsciclub/" + name;
         }, 1000)
-        
+
     }
 
-    return(
+    return (
         <div className="foot" >
-            <p onClick={handleClick} style={{marginBottom: "0"}}>
-                back to top
-            </p>
-            <p onClick={(e) => {redir(e, "pastmeetings")}} style={{marginBottom: "0"}}>
-                past meetings
-            </p>
-            <p onClick={(e) => {redir(e, "projects")}} style={{marginBottom: "0"}}>
-                projects
-            </p>
+            <div className="foot-div">
+                <p onClick={handleClick} style={{ marginBottom: "0" }}>
+                    back to top
+                </p>
+                <p onClick={(e) => { redir(e, "pastmeetings") }} style={{ marginBottom: "0" }}>
+                    past meetings
+                </p>
+                <p onClick={(e) => { redir(e, "projects") }} style={{ marginBottom: "0" }}>
+                    projects
+                </p>
+            </div>
+
+            <div className="foot-div">
+                <p onClick={(e) => { redir(e, "projects") }} style={{ marginBottom: "0" }}>
+                    remind
+                </p>
+                <p onClick={(e) => { redir(e, "projects") }} style={{ marginBottom: "0" }}>
+                    discord
+                </p>
+            </div>
+
         </div>
     )
 }

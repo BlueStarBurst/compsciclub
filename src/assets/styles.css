@@ -53,6 +53,7 @@
 html {
   overflow-x: hidden;
   color: white;
+  background-color: rgb(78, 108, 116);
 }
 
 .over {
@@ -120,7 +121,11 @@ html {
   justify-content: space-between;
   align-items: center;
   /* background-color: linear rgb(78, 108, 116, 0.8); */
-  background-image: linear-gradient(to bottom, rgba(78, 108, 116, 1), rgba(78, 108, 116, 0));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(78, 108, 116, 1),
+    rgba(78, 108, 116, 0)
+  );
   width: max-content;
   height: 10vh;
   margin-top: 0;
@@ -270,7 +275,7 @@ html {
 
 .page-static {
   padding: 1rem 10rem 10rem 10rem;
-  margin-top: 30vh;
+  margin-top: 15vh;
   min-height: 70vh;
   /* background-color: blue; */
   width: 100%;
@@ -333,6 +338,7 @@ html {
   z-index: 1000000;
   color: white;
   display: flex;
+  justify-content: space-between;
   gap: 1rem;
 }
 
@@ -415,6 +421,121 @@ html {
   }
 }
 
+.dropdown-card {
+  width: 100%;
+  max-width: 100%;
+  min-width: 500px;
+  overflow-wrap: normal;
+  flex-wrap: wrap;
+  /* margin-top: 45vh; */
+  background-color: white;
+  /* border-radius: 10px; */
+  transition: all 0.25s;
+}
+
+.dropdown-card h3 {
+  padding: 0.5em;
+  margin: 0;
+}
+
+.dropdown-card h3:hover {
+  cursor: pointer;
+}
+
+.frame {
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 0px 0px 10px 10px; */
+  /* border-radius: 0px !important; */
+}
+
+.frame-outer-closed {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.frame-outer-open {
+  height: 50vw;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.frame-closed {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  transition: all 1s;
+  pointer-events: all;
+  overflow: hidden;
+  position: relative;
+}
+
+.frame-open {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  transition: all 1s;
+  pointer-events: all;
+  background-image: url("./imgs/Eclipse-1s-200px.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+iframe {
+  border-radius: 0px !important;
+  height: 100%;
+  width: 100%;
+}
+
+.projects-container {
+  width: 80vw;
+  display: flex;
+  overflow: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.project-card {
+  border-radius: 10px !important;
+  width: 12rem;
+  height: 12rem;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.144);
+  color: white;
+  padding: 1rem;
+  transition: all 0.5s;
+}
+
+.project-card:hover {
+  opacity: 1 !important;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.75);
+  transition: all 0.5s;
+  transform: scale(1.05);
+}
+
+.project-card-header {
+  font-size: 130%;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project-card-body {
+  font-size: 90%;
+}
+
+.foot-div {
+  display: flex;
+  gap: 1rem;
+}
+
 @media only screen and (max-device-width: 600px) {
   html {
     font-size: 100%;
@@ -471,6 +592,7 @@ html {
   .page {
     padding: 1rem 1rem 0 1rem;
     width: 100vw;
+    margin-bottom: 20vh;
   }
 
   .page-static {
@@ -503,6 +625,16 @@ html {
     /* font-size: 150%; */
   }
 
+  .header-main .mainBack {
+    font-size: 130%;
+    overflow: wrap;
+    text-overflow: wrap;
+    line-break: auto;
+    word-break: normal;
+    word-wrap: normal;
+    max-width: 80vw;
+  }
+
   .header {
     font-size: 100%;
     transition: all 1s !important;
@@ -516,69 +648,14 @@ html {
     font-size: 120%;
     gap: 3rem;
   }
-}
 
-.dropdown-card {
-  width: 100%;
-  max-width: 100%;
-  min-width: 500px;
-  overflow-wrap: normal;
-  flex-wrap: wrap;
-  /* margin-top: 45vh; */
-  background-color: white;
-  /* border-radius: 10px; */
-  transition: all 0.25s;
-}
+  .project-card {
+    width: 40vw;
+    height: 40vw;
+    font-size: 200%;
+  }
 
-.dropdown-card h3 {
-  padding: 0.5em;
-  margin: 0;
-}
-
-.frame {
-  position: relative;
-  overflow: hidden;
-  /* border-radius: 0px 0px 10px 10px; */
-  /* border-radius: 0px !important; */
-}
-
-.frame-outer-closed {
-  height: 0;
-  position: relative;
-  overflow: hidden;
-  transition: all 1s;
-}
-
-.frame-outer-open {
-  height: 50vw;
-  position: relative;
-  overflow: hidden;
-  transition: all 1s;
-}
-
-.frame-closed {
-  width: 100%;
-  display: flex;
-  height: 100%;
-  transition: all 1s;
-  pointer-events: all;
-  overflow: hidden;
-  position: relative;
-}
-
-.frame-open {
-  width: 100%;
-  display: flex;
-  height: 100%;
-  transition: all 1s;
-  pointer-events: all;
-  background-image: url("./imgs/Eclipse-1s-200px.gif");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-iframe {
-  border-radius: 0px !important;
-  height: 100%;
-  width: 100%;
+  .projects-container {
+    width: 100vw;
+  }
 }
