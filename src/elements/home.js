@@ -60,7 +60,7 @@ export default function Home(props) {
             </CustomCard>
             <CustomCard>
                 <h3>where</h3>
-                <p>Mr. Stovall's room in the CHS STEAM facility (Room A204). Senior high students are more than welcome to show up whenever you can.</p>
+                <p>Mr. Stovall's room in the CHS STEAM facility (Room A124). Senior high students are more than welcome to show up whenever you can.</p>
             </CustomCard>
             <CustomCard>
                 <h3>why</h3>
