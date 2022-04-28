@@ -135,7 +135,8 @@ export default function PastMeetings(props) {
         <Header location="/" static />
         {/* <Header /> */}
         <div className="page-static" onClick={(e) => { handleClick(e, true) }}>
-
+            <DropdownCard name="4/28/22" url="https://docs.google.com/presentation/d/1QbunKXNe6mNwE58vjd7PX0Sd7uUbJ8_MLsQN8EHuTp4" trip={trip} setTrip={setTrip} current={current} setCurrent={setCurrent} />
+            <DropdownCard name="4/21/22" url="https://docs.google.com/presentation/d/194YLCje0KFAsECteR3CqBad9eXWqT-nqQLiI2OcdDyk" trip={trip} setTrip={setTrip} current={current} setCurrent={setCurrent} />
             <DropdownCard name="4/7/22" url="https://docs.google.com/presentation/d/1UGVGqaqjV6cmOpvx3PDq7pMqSaYLsFDM7X20DEcCGr0" trip={trip} setTrip={setTrip} current={current} setCurrent={setCurrent} />
             <DropdownCard name="3/24/22" url="https://docs.google.com/presentation/d/1h027w4lavaeIgn-D24tbPqZBelGe4blAgMsLHbXjk7k" trip={trip} setTrip={setTrip} current={current} setCurrent={setCurrent} />
             <DropdownCard name="3/10/22" url="https://docs.google.com/presentation/d/1yVNBbhRw_v_yzNdmexhXX-RGoITeqMQDRho92yCfXVI" trip={trip} setTrip={setTrip} current={current} setCurrent={setCurrent} />
@@ -152,8 +153,6 @@ export default function PastMeetings(props) {
             <DropdownCard name="10/21/21" url="https://docs.google.com/presentation/d/10CDYTRT3VxPxtatGKIs6JbXXVmNoS-U4_fRjrdeML-E" trip={trip} setTrip={setTrip} current={current} setCurrent={setCurrent} />
             <DropdownCard name="10/14/21" url="https://docs.google.com/presentation/d/1nluTYJdYi4QxzkYj2XNHmyIpl3neP_AZANknNCMZbqE" trip={trip} setTrip={setTrip} current={current} setCurrent={setCurrent} />
             <DropdownCard name="10/7/21" url="https://docs.google.com/presentation/d/11afwZOyvT3NjtQF4hHOK8yNpBQ8BCLMUc6_Mh6HECWE" trip={trip} setTrip={setTrip} current={current} setCurrent={setCurrent} />
-
-
         </div>
         <Footer />
     </>)
