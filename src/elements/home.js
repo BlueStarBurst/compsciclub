@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react"
 import CustomCard from "./card"
-// import im1 from "../assets/drawings/1.png"
+import im1 from "../assets/imgs/heartback.jpg"
 // import cant from "../assets/img/canterbury.jpg"
 // import anglo from "../assets/img/anglo.jpg"
 // import anglo2 from "../assets/img/anglo2.png"
@@ -43,32 +43,8 @@ export default function Home(props) {
 
 
     return (<>
-        <Header location="/" />
-        {/* <Header /> */}
-        <div className="page" onClick={(e) => { handleClick(e, true) }}>
-            <div className="focusedImage" ref={focImg}>
-                <img id="foc" ref={focImageSrc} ></img>
-            </div>
 
-            <CustomCard>
-                <h3>what</h3>
-                <p>Southlake Carroll's Computer Science Club is a club where anyone share their interest in computer science. There is no experience is required so feel free to dive in to comp sci and join us.</p>
-            </CustomCard>
-            <CustomCard>
-                <h3>when</h3>
-                <p>Every Thursday from 3:30 pm to 4:30 pm!</p>
-            </CustomCard>
-            <CustomCard>
-                <h3>where</h3>
-                <p>Mr. Stovall's room in the CHS STEAM facility (Room A124). Senior high students are more than welcome to show up whenever you can.</p>
-            </CustomCard>
-            <CustomCard>
-                <h3>why</h3>
-                <p>cuz we all know that there's comp sci is something you want to do but are too lazy to do it so you show up here to do it with other people.</p>
-            </CustomCard>
+        <img src={im1}/>
 
-
-        </div>
-        <Footer />
     </>)
 }
