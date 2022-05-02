@@ -659,9 +659,3 @@ iframe {
     width: 100vw;
   }
 }
-
-.back-container {
-  background-image: url("./imgs/heartback.jpg");
-  width: 100vw;
-  height: 100vh;
-}
