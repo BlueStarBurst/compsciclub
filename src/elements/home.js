@@ -41,7 +41,6 @@ export default function Home(props) {
     }
 
 
-
     return (<>
         <Header location="/" />
         {/* <Header /> */}
